@@ -1,13 +1,13 @@
 body {
-	background-color: violet;
+	background-color: blue;
 	font-family: sans-serif;
 	font-color:green;
 	font-size: 59px
 	text-align: center; 
 }
 button {
-	font-size: 58px;
-	color:brown;
+	font-size: 100px;
+
 }
 h1 {
 	color:blue;
@@ -17,7 +17,4 @@ button {
 	font-size:50px;
 
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
