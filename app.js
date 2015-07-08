@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 $(document).ready(function(){
     $("button").click(function(){
@@ -19,3 +20,17 @@ var press = function () {
 		return;
 		}
 };
+=======
+$("button").click(function(){
+    $("#box").animate({height: "300px"});
+});
+$("button").click(function(){
+    $("#box").animate({width: "300px"});
+});
+$("button").click(function(){
+    $("#box").animate({height: "150px"});
+});
+$("button").click(function(){
+    $("#box").animate({height: "150px"});
+});
+>>>>>>> Stashed changes
