@@ -1,5 +1,13 @@
-body{
-	background-color:white;
+body {
+	background-color: violet;
+	font-family: sans-serif;
+	font-color:green;
+	font-size: 59px
+	text-align: center; 
+}
+button {
+	font-size: 58px;
+	color:brown;
 }
 h1 {
 	color:blue;
