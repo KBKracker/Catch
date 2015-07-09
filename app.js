@@ -5,7 +5,6 @@ $("button").click(function(){
             $("button").hide(); 
             $("h2").hide();
     }, 60000);
-
-});
-
+     window.alert("Validation May Take A While");
+   });
 
