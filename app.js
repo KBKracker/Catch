@@ -6,6 +6,18 @@ var s = 1;
 var face = 100;
 var good = 200;
 var nice = 500;
+if (Uscore > 10){
+            $("#X3").show();
+            Uscore = restart;
+        }
+if (Uscore > 15){
+            $("#X4").show();
+            Uscore = restart;
+        }
+if (Uscore > 20){
+            $("#X5").show();
+            Uscore = restart;
+        }
 $("#clicky").hide();
 $("#juice").hide();
 $("#X3").hide();
@@ -13,6 +25,7 @@ $("#X4").hide();
 $("#X5").hide();
 $("#Back").hide();
 $("#Shop").hide();
+$("#jim").hide();
 $("#loose").click(function(){
 
     alert("The game is now loading");
@@ -45,7 +58,7 @@ $("#loose").click(function(){
 					$('#highscore').html("New Highscore " + Uscore);
 				}
 			});
-    }, 10000);
+    }, 1000);
    });
 
 
@@ -62,10 +75,7 @@ $("#juice").click(function(){
         s=2;
     }, 5000);
 });
-if (Uscore > 100){
-    $("#X3").show();
-    Uscore = 0;
-}
+
 
 $("#X3").click(function(){
     alert("Your upgrade is being confirmed");
@@ -75,9 +85,7 @@ $("#X3").click(function(){
     }, 10000);
 });
 
-if (Uscore > 200){
-    $("#X4").show();
-}
+
 $("#X4").click(function(){
     alert("Your upgrade is being confirmed");
     setTimeout(function(){
@@ -87,9 +95,7 @@ $("#X4").click(function(){
     }, 15000);
 });
 
-if (Uscore > 2000){
-    $("#X5").show();
-}
+
 $("#X5").click(function(){
     alert("Your upgrade is being confirmed");
     setTimeout(function(){
@@ -111,9 +117,8 @@ $("#Shop").click(function(){
         $("#Back").show();
         $("#loose").hide();
         $("#kitsune").hide();
-        $("#ranson").hide();
-        $("#Uscore").hide();
         $("#clicky").hide();
+        $("#jim").show();
 });
 
 $("#Back").click(function(){
@@ -126,9 +131,27 @@ $("#Back").click(function(){
         $("#Back").hide();
         $("#loose").show();
         $("#kitsune").show();
-        $("#ranson").show();
-        $("#Uscore").show();
         $("#clicky").show();
+        $("#jim").hide();
 });
 function ranson(){
 }
+
+$("#jim").click(function(){
+    if (Uscore >= 10)
+            $("#X3").show();
+            Uscore = restart;
+     });
+$("#jim").click(function(){
+    if (Uscore >= 20)
+            $("#X4").show();
+            Uscore = restart;
+    
+     });
+$("#jim").click(function(){
+    if (Uscore >= 30)
+            $("#X5").show();
+            Uscore = restart;
+     });
+
+
