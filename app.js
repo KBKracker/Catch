@@ -130,3 +130,5 @@ $("#Back").click(function(){
         $("#Uscore").show();
         $("#clicky").show();
 });
+function ranson(){
+}
