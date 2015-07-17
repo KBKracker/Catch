@@ -70,9 +70,23 @@ $("#Shop").click(function(){
 });
 $("#juice").click(function(){
     alert("Your upgrade is being confirmed");
+    if (Uscore < 20){
+    if (Uscore < 20)
+            alert("You need at least 20 points");    
+    }
+    else if {
     setTimeout(function(){
         alert("You now have a x2 upgrade");
         s=2;
+        (Uscore = Uscore - 20);
+
+        if (Uscore >= 20)
+        
+            $("#X3").show();    
+    }
+    
+
+
     }, 5000);
 });
 
@@ -82,6 +96,11 @@ $("#X3").click(function(){
     setTimeout(function(){
         alert("You now have a x3 upgrade");
         s=3;
+        (Uscore = Uscore - 100);
+        if (Uscore >= 100)
+            $("#X4").show();
+        if (Uscore < 100);
+            alert("You need at least 100");
     }, 10000);
 });
 
@@ -91,7 +110,11 @@ $("#X4").click(function(){
     setTimeout(function(){
         alert("You now have a x4 upgrade");
         s=4;
-        $("#X5").show();
+        (Uscore = Uscore - 500);
+         if (Uscore >= 500)
+            $("#X5").show();
+        if (Uscore < 500)
+            alert("You need at least 500 points");
     }, 15000);
 });
 
@@ -101,6 +124,9 @@ $("#X5").click(function(){
     setTimeout(function(){
         alert("You now have a x5 upgrade");
         s=5;
+        (Uscore=Uscore - 2500);
+        if (Uscore < 2500);
+            alert("You need at least 2000 points")
     },20000 );
 });
 
@@ -129,7 +155,7 @@ $("#Back").click(function(){
         $("#X4").hide();
         $("#X5").hide();
         $("#Back").hide();
-        $("#loose").show();
+        $("#loose").hide();
         $("#kitsune").show();
         $("#clicky").show();
         $("#jim").hide();
@@ -138,20 +164,17 @@ function ranson(){
 }
 
 $("#jim").click(function(){
-    if (Uscore >= 10)
+    if (Uscore >= 50)
             $("#X3").show();
-            Uscore = restart;
-     });
-$("#jim").click(function(){
-    if (Uscore >= 20)
+            
+            if (Uscore >= 100)
             $("#X4").show();
-            Uscore = restart;
-    
-     });
-$("#jim").click(function(){
-    if (Uscore >= 30)
+            
+
+            if (Uscore >= 150)
             $("#X5").show();
-            Uscore = restart;
+            
+    
      });
 
 
